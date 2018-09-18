@@ -8,7 +8,7 @@ export default class  Login {
             document.body.innerHTML = `  <div class="login">
                                            <header class="header">
                                                <div class="header__logo">chat app</div>
-                                               <h1 class="header__welcome">Welcome to chat app</h1>
+                                               <h1 class="header__welcome">Welcome to Chat app</h1>
                                            </header>
                                            <form class="form" action="">
                                                <input class="form__username" type="text" placeholder="Username" autofocus autocomplete="current-password"

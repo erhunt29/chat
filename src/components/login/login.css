@@ -9,6 +9,10 @@
 
 }
 
+body {
+    background: url("../images/bg.png");
+}
+
 input {
     border: none;
 }
@@ -17,7 +21,7 @@ input {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    background: url("../images/bg.png") no-repeat;
+    background: white;
     margin: 0 auto;
     height: 719px;
     width: 404px;
@@ -45,14 +49,14 @@ input {
     background: url("../images/logo.png") no-repeat;
     background-size: cover;
     font: 700 28px  'Open Sans', sans-serif;
-    color: #ffffff;
+    color: white;
 
 }
 
 .header__welcome {
     font: 30px  'Open Sans', sans-serif;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: black;
 }
 
 .form {
@@ -69,12 +73,12 @@ input {
     width: calc(599px/1.855);
     height: calc(90px/1.855);
     font: 22px "Helvetica Neue",sans-serif;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: black;
+    border-bottom: 1px solid black;
     background: rgba(0,0,0,0.0);
 }
 .form__username::placeholder {
-    color: #ffffff;
+    color: black;
 }
 .form__username:focus {
     outline: none;
@@ -86,13 +90,13 @@ input {
     width: calc(599px/1.855);
     height: calc(90px/1.855);
     font: 22px "Helvetica Neue",sans-serif;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: black;
+    border-bottom: 1px solid black;
     background: rgba(0,0,0,0.0);
 }
 
 .form__password::placeholder {
-    color: #ffffff;
+    color:black;
 }
 
 .form__password:focus {
@@ -104,7 +108,7 @@ input {
     width: calc(599px/1.855);
     height: calc(102px/1.855);
     font: 20px "Helvetica Neue",sans-serif;
-    color: #ffffff;
+    color: white;
     background: #f15a24;
     border:  #f15a24;
 }
@@ -116,7 +120,7 @@ input {
 .footer {
     margin-top: 10px;
     font: 16px "Helvetica Neue",sans-serif;
-    color: #ffffff;
+    color:black;
 }
 .footer__sigh-up {
     text-decoration: underline;
