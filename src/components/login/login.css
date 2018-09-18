@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /*outline: 1px solid red;*/
+    /*background: rgba(0,0,0,0.5);*/
+
+}
+
+input {
+    border: none;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: url("../images/bg.png") no-repeat;
+    margin: 0 auto;
+    height: 719px;
+    width: 404px;
+    padding-top: 94px;
+}
+
+.header {
+    margin: 0 auto;
+    width: calc(599px/1.855);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 215px;
+    box-sizing: border-box;
+
+}
+
+.header__logo {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 90px  ;;
+    width: calc(245px/1.855);
+    height: calc(270px/1.855);
+    background: url("../images/logo.png") no-repeat;
+    background-size: cover;
+    font: 700 28px  'Open Sans', sans-serif;
+    color: #ffffff;
+
+}
+
+.header__welcome {
+    font: 30px  'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.form {
+    font: 28px "Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__username {
+    margin-top: 14px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    width: calc(599px/1.855);
+    height: calc(90px/1.855);
+    font: 22px "Helvetica Neue",sans-serif;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    background: rgba(0,0,0,0.0);
+}
+.form__username::placeholder {
+    color: #ffffff;
+}
+.form__username:focus {
+    outline: none;
+}
+.form__password {
+    margin-top: 14px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    width: calc(599px/1.855);
+    height: calc(90px/1.855);
+    font: 22px "Helvetica Neue",sans-serif;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    background: rgba(0,0,0,0.0);
+}
+
+.form__password::placeholder {
+    color: #ffffff;
+}
+
+.form__password:focus {
+    outline: none;
+}
+
+.form__sigh-in {
+    margin-top: 155px;
+    width: calc(599px/1.855);
+    height: calc(102px/1.855);
+    font: 20px "Helvetica Neue",sans-serif;
+    color: #ffffff;
+    background: #f15a24;
+    border:  #f15a24;
+}
+
+.form__sigh-in:focus {
+    outline: none;
+}
+
+.footer {
+    margin-top: 10px;
+    font: 16px "Helvetica Neue",sans-serif;
+    color: #ffffff;
+}
+.footer__sigh-up {
+    text-decoration: underline;
+}
