@@ -28,82 +28,6 @@ input {
     padding-top: 94px;
 }
 
-.header {
-    margin: 0 auto;
-    width: calc(599px/1.855);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 215px;
-    box-sizing: border-box;
-
-}
-
-.header__logo {
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-top: 90px  ;;
-    width: calc(245px/1.855);
-    height: calc(270px/1.855);
-    background: url("../images/logo.png") no-repeat;
-    background-size: cover;
-    font: 700 28px  'Open Sans', sans-serif;
-    color: white;
-
-}
-
-.header__welcome {
-    font: 30px  'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    color: black;
-}
-
-.form {
-    font: 28px "Helvetica Neue",sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form__username {
-    margin-top: 14px;
-    box-sizing: border-box;
-    padding-left: 5px;
-    width: calc(599px/1.855);
-    height: calc(90px/1.855);
-    font: 22px "Helvetica Neue",sans-serif;
-    color: black;
-    border-bottom: 1px solid black;
-    background: rgba(0,0,0,0.0);
-}
-.form__username::placeholder {
-    color: black;
-}
-.form__username:focus {
-    outline: none;
-}
-.form__password {
-    margin-top: 14px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    padding-left: 5px;
-    width: calc(599px/1.855);
-    height: calc(90px/1.855);
-    font: 22px "Helvetica Neue",sans-serif;
-    color: black;
-    border-bottom: 1px solid black;
-    background: rgba(0,0,0,0.0);
-}
-
-.form__password::placeholder {
-    color:black;
-}
-
-.form__password:focus {
-    outline: none;
-}
-
 .form__gender {
     margin-top: 10px;
     display: flex;
@@ -134,11 +58,7 @@ input {
     outline: none;
 }
 
-.footer {
-    margin-top: 10px;
-    font: 16px "Helvetica Neue",sans-serif;
-    color:black;
-}
+
 .footer__sigh-in {
     text-decoration: underline;
     cursor: pointer;
