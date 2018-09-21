@@ -176,3 +176,9 @@ input {
 .successful-registration__button:focus {
     outline: none;
 }
+
+@media handheld and (max-width: 1100px){
+    .create-account{
+        width: 100%;
+    }
+}

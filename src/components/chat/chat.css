@@ -180,3 +180,10 @@ li {
     height: 34px;
     font: 16px 'Open Sans',sans-serif;
 }
+
+
+@media handheld and (max-width: 1100px){
+    .chat{
+        width: 100%;
+    }
+}

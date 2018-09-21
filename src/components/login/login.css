@@ -146,3 +146,9 @@ input {
     font: 14px "Helvetica Neue",sans-serif;
     background: #f15a24;
 }
+
+@media handheld and (max-width: 1100px){
+    .login{
+        width: 100%;
+    }
+}

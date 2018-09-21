@@ -170,3 +170,9 @@ li {
     outline: 1px solid black;
     font: 13px 'Open Sans', sans-serif;
 }
+
+@media handheld and (max-width: 1100px){
+    .contacts{
+        width: 100%;
+    }
+}
