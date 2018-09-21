@@ -24,6 +24,7 @@ li {
 }
 
 .navigation {
+    position: relative;
     display: flex;
     height: 60px;
     background: #f15a24;
@@ -37,57 +38,61 @@ li {
     justify-content: space-between;
 }
 
-.navigation__item-menu {
-    position: relative;
-}
-.item-menu__back, .item-menu__back::before {
-    margin-left: 20px;
-    transform: rotate(-35deg) translateY(-10px);
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background: white;
+.navigation__item-back {
+    background: url("../images/back.svg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
-.item-menu__back::before {
-    content: "";
-    transform: rotate(70deg) translateY(28px) translateX(0px);
-}
 
 .navigation__item-contactname {
     color: white;
     font: 16px 'Open Sans',sans-serif;
 }
-.navigation__item-info {
+.navigation__item-more {
     margin-right: 15px;
+    background: url("../images/more.svg");
+    background-size: cover;
+    width: 15px;
+    height: 25px;
     position: relative;
+    cursor: pointer;
 }
 
-.item-add__line,.item-add__line::before,.item-add__line::after{
+.more {
     position: absolute;
     right: 0px;
-    width: 5px;
-    height: 5px;
-    border-radius: 3px;
-    background: white;
+    width: 150px;
+    height: 60px;
+    background: #f15a24;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: 16px 'Open Sans',sans-serif;
+    outline: 1px solid black;
+    display: none;
 }
 
-.item-add__line::before {
-    content: "";
-    transform: translateY(10px);
+.more__clean-chat {
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+.more__delete-contact {
+    cursor: pointer;
 }
 
-.item-add__line::after {
-    content: "";
-    transform: translateY(-10px);
-}
+
 
 
 .main__message-list {
     display: flex;
     flex-direction: column;
     width: 404px;
-    height: 590px;
+    height: 600px;
     overflow: auto;
 }
 .message-from-contact {
@@ -95,11 +100,15 @@ li {
     min-width: 70px;
     position: relative;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background: #ffdab9;
     padding: 5px 5px 5px 15px;
     border-radius: 10px;
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 .message-from-contact::before{
@@ -117,11 +126,15 @@ li {
     min-width: 70px;
     max-width: 200px;
     margin-right: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background: #cedde4;
     padding: 5px 15px 5px 15px;
     align-self: flex-end;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 .message-from-user::before {
     bottom: 0px;
@@ -131,6 +144,17 @@ li {
     width: 34px;
     height: 15px;
     background:  url("../images/message-bg-user.png") 0 bottom no-repeat;
+}
+.text-message {
+    align-self: flex-start;
+    font: 14px 'Open Sans',sans-serif;
+    color: black;
+}
+
+.time-message  {
+    align-self: flex-end;
+    font: 10px 'Open Sans',sans-serif;
+    color: black;
 }
 
 

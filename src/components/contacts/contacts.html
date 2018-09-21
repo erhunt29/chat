@@ -8,16 +8,21 @@
 <body>
         <div class="contacts">
             <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item-menu">
-                <span class="item-menu__burger"></span>
-            </li>
-            <li class="navigation__item-contacts">Contact list</li>
-            <li class="navigation__item-add">
-                <span class="item-add__line"></span>
-            </li>
-        </ul>
-    </nav>
+                <ul class="navigation__list">
+                    <li class="navigation__item-exit">
+                    </li>
+                    <li class="navigation__item-contacts">Contact list</li>
+                    <li class="navigation__item-add">
+                    </li>
+                </ul>
+            </nav>
+            <form class="add-contact">
+                  <div>
+                      <input class="add-contact__name" type="text" placeholder="Contact name" autofocus>
+                      <button class="add-contact__button">Add</button>
+                  </div>
+                <span class="add-contact__error">У вас уже есть такой контакт</span>
+            </form>
             <main class="main">
                 <input type="button" class="main__search" value="Search">
                 <ul class="main__contact-list">
@@ -143,9 +148,6 @@
                     </li>
                 </ul>
             </main>
-
-
-
         </div>
 </body>
 </html>

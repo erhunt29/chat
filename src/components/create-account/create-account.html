@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="create-account.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="create-account">
+        <header class="header">
+            <div class="header__logo">chat app</div>
+            <h1 class="header__welcome">Welcome to chat app</h1>
+        </header>
+        <div class="successful-registration">
+            <span>Вы успешно зарегистрированы!</span>
+            <span>Пожалуйста  войдите.</span>
+            <form action="">
+                <button class="successful-registration__button">Login</button>
+            </form>
+        </div>
+        <form class="form" action="">
+            <input class="form__username" type="text" placeholder="Username">
+            <input class="form__password" type="password" placeholder="Password">
+           <div class="form__gender">
+               <label for="gender-male">Male</label>
+               <input id ="gender-male" name="gender" class="form__gender--male" type="radio" >
+           </div>
+
+            <div class="form__gender">
+                <label for="gender-female">Female</label>
+                <input id ="gender-female" name="gender" class="form__gender--female" type="radio" >
+            </div>
+            <button class="form__sigh-up">Sign Up</button>
+        </form>
+        <footer class="footer">Have account? <span class="footer__sigh-in">Sigh In</span></footer>
+    </div>
+</body>
+</html>

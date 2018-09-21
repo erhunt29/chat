@@ -16,7 +16,7 @@ body {
 input {
     border: none;
 }
-.login{
+.create-account{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +85,7 @@ input {
 }
 .form__password {
     margin-top: 14px;
+    margin-bottom: 15px;
     box-sizing: border-box;
     padding-left: 5px;
     width: calc(599px/1.855);
@@ -103,8 +104,24 @@ input {
     outline: none;
 }
 
-.form__sigh-in {
-    margin-top: 155px;
+.form__gender {
+    margin-top: 10px;
+    display: flex;
+    align-items: baseline;
+    width: calc(599px/1.855);
+    font: 22px "Helvetica Neue",sans-serif;
+}
+
+.form__gender--male {
+    margin-left: 10px;
+}
+
+.form__gender--female {
+    margin-left: 10px;
+}
+
+.form__sigh-up {
+    margin-top: 80px;
     width: calc(599px/1.855);
     height: calc(102px/1.855);
     font: 20px "Helvetica Neue",sans-serif;
@@ -113,7 +130,7 @@ input {
     border:  #f15a24;
 }
 
-.form__sigh-in:focus {
+.form__sigh-up:focus {
     outline: none;
 }
 
@@ -122,13 +139,13 @@ input {
     font: 16px "Helvetica Neue",sans-serif;
     color:black;
 }
-.footer__sigh-up {
+.footer__sigh-in {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.error-username {
-    top: 375px;
+.error-gender {
+    top: 537px;
     left: center;
     position: absolute;
     width: calc(599px/1.855);
@@ -136,13 +153,26 @@ input {
     font: 14px "Helvetica Neue",sans-serif;
     background: #f15a24;
 }
-
-.error-password {
-    top: 437px;
+.successful-registration {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 357px;
     left: center;
     position: absolute;
     width: calc(599px/1.855);
-    outline: 1px solid red;
-    font: 14px "Helvetica Neue",sans-serif;
+    font: 20px "Helvetica Neue",sans-serif;
     background: #f15a24;
+    border-radius: 20px;
+}
+.successful-registration__button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font: 20px "Helvetica Neue",sans-serif;
+}
+.successful-registration__button:focus {
+    outline: none;
 }
